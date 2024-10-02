@@ -16,5 +16,11 @@ My submissions for the Frontend Mentor Challenges.
           QR Code Page
        </a>
        </td>
+      <td>2</td>
+       <td>
+       <a href="https://alanoliveirasantos.github.io/Frontend-Mentor/faq-accordion-main/" target="_blank">
+          FAQ Page
+       </a>
+       </td>
      </tr>
     <tr>
