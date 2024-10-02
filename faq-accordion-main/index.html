@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" fill="none" viewBox="0 0 40 41"><path fill="#AD28EB" d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z"/></svg>
+      FAQs
+    </h1>
+
+<!--Reposta 1: -->
+  <div class="question1">
+    <div>
+      What is Frontend Mentor, and how will it help me?
+      <button id="button1" class="faq-toggle" onclick="toggleFAQ('answer1', 'iconPlus1', 'iconMinus1')">
+        <img id="iconPlus1" class="iconPlus" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="iconPlus">
+        <img id="iconMinus1" class="iconMinus" src="/faq-accordion-main/assets/images/icon-minus.svg" alt="iconMinus">
+      </button>
+    </div>
+    <p id="answer1" class="answer">
+      Frontend Mentor offers realistic coding challenges to help developers improve their
+      frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+      all levels and ideal for portfolio building.
+    </p>
+  </div>
+
+<!--Reposta 2: -->
+  <div class="question2">
+    <div>
+      Is Frontend Mentor free?
+      <button id="button2" class="faq-toggle" onclick="toggleFAQ('answer2', 'iconPLus2', 'iconMinus2')">
+        <img id="iconPLus2" class="iconPLus" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="iconPlus">
+        <img id="iconMinus2" class="iconMinus" src="/faq-accordion-main/assets/images/icon-minus.svg" alt="iconMinus">
+     </button>
+    </div> 
+    <p id="answer2" class="answer">
+     Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+     option providing access to a range of projects suitable for all skill levels.
+    </p>           
+  </div>
+             
+<!--Reposta 3: -->
+  <div class="question2">
+    <div>
+      Can I use Frontend Mentor projects in my portfolio?
+      <button id="button3" class="faq-toggle" onclick="toggleFAQ('answer3', 'iconPLus3', 'iconMinus3')">
+        <img id="iconPLus3" class="iconPLus" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="iconPlus">
+        <img id="iconMinus3" class="iconMinus" src="/faq-accordion-main/assets/images/icon-minus.svg" alt="iconMinus">
+      </button>
+    </div> 
+    <p id="answer3" class="answer">
+      Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+      way to showcase your skills to potential employers!
+    </p>           
+  </div>
+    
+
+<!--Reposta 4: -->
+  <div class="question4">
+    <div>
+      How can I get help if I'm stuck on a Frontend Mentor challenge?
+      <button id="button4" class="faq-toggle" onclick="toggleFAQ('answer4', 'iconPLus4', 'iconMinus4')">
+        <img id="iconPLus4" class="iconPLus" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="iconPlus">
+        <img id="iconMinus4" class="iconMinus" src="/faq-accordion-main/assets/images/icon-minus.svg" alt="iconMinus">
+      </button>
+    </div> 
+    <p id="answer4" class="answer">
+      The best place to get help is inside Frontend Mentor's Discord community. There's a help
+      channel where you can ask questions and seek support from other community members.
+    </p>           
+  </div>
+      
+        
+       
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
