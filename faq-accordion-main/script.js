@@ -1,3 +1,5 @@
+document.getElementById('texto').addEventListener('click', toggleFAQ);
+
 function toggleFAQ(answerId, iconPlusId, iconMinusId) {
     var answer = document.getElementById(answerId);
     var iconPlus = document.getElementById(iconPlusId);

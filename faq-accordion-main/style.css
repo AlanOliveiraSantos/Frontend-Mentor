@@ -1,12 +1,96 @@
-.attribution { font-size: 11px; text-align: center; }
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+.attribution {  font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+
+    background-image: url('/faq-accordion-main/assets/images/background-pattern-desktop.svg');
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+  }
+  .faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  button {
+    background: none;
+    border: none;
+    margin-left: 25px;
+  }
 .iconPlus{
     display: inline-block;
-}
+    }
 .iconMinus{
     display: none;
-}
+    }
 p{
     display: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    max-width: 500px;
+    font-size: 1.05rem;
+    color: hsl(292, 16%, 49%);
+    word-spacing: 5px;
+    }
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    }
+ h1{
+    font-size: 4rem;
+ } 
+ h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+ }
+ div h2:hover {
+    color: hsl(288, 93%, 40%); /* Altere para a cor desejada */
 }
+img{
+    width: 45px;
+}
+    @media (max-width: 768px) {
+        .faq-container {
+          padding: 20px;
+        }
+      
+        .question {
+          max-width: 100%;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .faq-container {
+          padding: 10px;
+        }
+      
+        .question {
+          max-width: 100%;
+        }
+      
+        h1 {
+          font-size: 3rem;
+        }
+      }
