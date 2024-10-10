@@ -110,8 +110,13 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   .cart-container.empty{
+<<<<<<< HEAD
     background-image:url(/product-list-with-cart-main/assets/images/illustration-empty-cart.svg);
     background-position:center 20%;
+=======
+    background-image:url(assets/images/illustration-empty-cart.svg);
+    background-position: center;
+>>>>>>> 2712e16e7598ad2117247d81d70300ddbce10388
     background-repeat: no-repeat;
     background-size: 40%;
     
