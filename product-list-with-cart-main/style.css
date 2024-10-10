@@ -111,9 +111,10 @@ h1{
   }
   .cart-container.empty{
     background-image:url(/product-list-with-cart-main/assets/images/illustration-empty-cart.svg);
-    background-position: center;
+    background-position:center 20%;
     background-repeat: no-repeat;
     background-size: 40%;
+    
   }
   .cart-container h2{
     text-align: left;
@@ -131,33 +132,40 @@ h1{
     font-size: 18px;
     font-weight: bold;
   }
+  #clear-cart{
+    background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bolder;
+  }
   ul {
     list-style-type: none;
-    padding: 0px 20px;
+    padding: 0;
     font-size: 20px;
     margin-bottom: 10px;
-    
+    margin-top: 0;
   }
 ul#cart-items li {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  margin: auto;
   border-bottom: 1px solid #ccc;
+  order: 1;
 }
-
+.item-name {
+  width: 100%;
+  text-align: left;
+}
 ul#cart-items .item-name {
-  flex: 2;
   font-weight: bold;
-}
-
-ul#cart-items .item-quantity,
-ul#cart-items .item-price {
-  flex: 1;
-  text-align: right;
 }
 
 ul#cart-items .item-price {
@@ -183,18 +191,9 @@ ul#cart-items .item-price {
 }
 
   @media (max-width: 1400px) {
-    .item button{
-        font-size: 12px;
-        top:250px; /* Metade do botão sobre a imagem */
-        left: 50%;
-        justify-content: center;
-        width: 200px;
-    }
-  }
-
-  @media (max-width: 1265px) {
     .main-container {
         margin: 30px 50px;
+        
     }
     .item-container {
         grid-template-columns: repeat(2, 1fr);
@@ -205,6 +204,19 @@ ul#cart-items .item-price {
         top:300px; /* Metade do botão sobre a imagem */
         left: 50%;
     }
+    .cart-container{
+      width: 40%;
+    }
+    ul#cart-items li{
+      justify-content: space-between;
+      flex-wrap: wrap;
+      order: 1;
+      margin: auto;
+    }
+    .item-name {
+      text-align: left;
+    }
+    
 }
 
 @media (max-width: 992px) {
@@ -219,6 +231,15 @@ ul#cart-items .item-price {
       font-size: 12px;
       width: 160px;
       top: 67%;
+    }
+    ul#cart-items li{
+      justify-content: center;
+      flex-wrap: wrap;
+      order: 1;
+      margin: auto;
+    }
+    .item-name {
+      text-align: center;
     }
 }
 
@@ -267,6 +288,15 @@ ul#cart-items .item-price {
         margin-bottom: 30px;
         height: auto;
         
+      }
+      ul#cart-items li{
+        justify-content: space-between;
+        order: 1;
+        margin: auto;
+      }
+      .item-name {
+        width: 100%;
+        text-align: left;
       }
     }
  
